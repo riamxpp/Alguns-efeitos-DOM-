@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Efeitos DOM</title>
+</head>
+<body>
+  <section class="container tab-nav">
+    <ul class="numeros-lista" data-tab="menu" id="topo">
+      <li><img src="img/imagem-1.png" alt="imagem 01"></li>
+      <li><img src="img/imagem-2.png" alt="imagem 02"></li>
+      <li><img src="img/imagem-3.png" alt="imagem 03"></li>
+      <li><img src="img/imagem-4.png" alt="imagem 04"></li>
+      <li><img src="img/imagem-5.png" alt="imagem 05"></li>
+    </ul>
+    <div class="imagens-1A5" data-tab="content">
+      <section data-anima="show-right">
+        <p>Imagem 01</p>
+      </section>
+      <section data-anima="show-right">
+        <p>Imagem 02</p>
+      </section>
+      <section data-anima="show-right">
+        <p>Imagem 03</p>
+      </section>
+      <section data-anima="show-right">
+        <p>Imagem 04</p>
+      </section>
+      <section data-anima="show-right">
+        <p>Imagem 05</p>
+      </section>
+    </div>
+  </section>
+  <section class="container">
+    <div class="container-dropDown">
+      <nav data-itens="menu">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li data-dropdown>
+            <a href="#">Tecnologias</a>
+            <ul class="drop-down">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </li>
+          <li>item 4</li>
+        </ul>
+    </div>
+  </section>
+  <section class="container">
+    <div class="aumenta__diminui-img">
+      <img class="papagaio" src="img/imagem-para-aumentar.jpg" alt="Foto de papagaio">
+      <button data-aumenta>Aumentar imagem</button>
+      <button data-diminui>Diminuir imagem</button>
+    </div>
+  </section>
+  <section class="container estiliza-caixa">
+    <h4>Estilize a caixa</h4>
+    <div class="caixa-creator">
+      <form class="propriedades__caixa-Creator">
+        <label for="texto">Texto</label>
+        <input type="text" id="texto" name="texto">
+        <label for="width">Tamanho</label>
+        <input type="range" id="width" name="width" min="0" max="150">
+        <label for="height">Altura</label>
+        <input type="range" id="height" name="height" min="0" max="150">
+        <label for="backgroundColor">Cor de fundo</label>
+        <input type="color" id="backgroundColor" name="backgroundColor">
+        <label for="color">Cor texto</label>
+        <input type="color" id="color" name="color">
+        <label for="borderRadius">Arredondar borda</label>
+        <input type="range" id="borderRadius" name="borderRadius" min="0" max="75">
+      </form>
+      <div class="caixa__para-alterar">
+        <div></div>
+      </div>
+    </div>
+  </section>
+  <section class="container tooltype-box" aria-label="Acordo pensando em javascript, durmo pensando em javascript.">
+  </section>
+  <section class="container container-modal">
+    <a href="#" class="inicia-modal">Clique</a>
+    <div class="background-modal">
+      <div class="modal">
+        <button>X</button>
+        <h4>MODAL</h4>
+      </div>  
+    </div>
+  </section>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
