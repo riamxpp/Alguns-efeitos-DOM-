@@ -8,8 +8,10 @@ export default class TabNav {
   
   adicionandoEvento(){
     this.imagens.forEach((item, index) => {
-      item.addEventListener('click', () => {
-        this.handleContent(index);
+      ['touch', 'click'].forEach(evento => {
+        item.addEventListener(evento, () => {
+          this.handleContent(index);
+        })
       })
     })
   }

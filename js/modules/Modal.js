@@ -6,15 +6,17 @@ export default class Modal {
   }
 
   addEvento(){
-    this.iniciaModal.addEventListener('click', this.startModal);
-    this.botao.addEventListener('click', this.fechaModalBotao);
-    this.modal.addEventListener('click', this.fechaModalFora);
+    ['touch', 'click'].forEach(evento => {
+      this.iniciaModal.addEventListener(evento, this.startModal);
+      this.botao.addEventListener(evento, this.fechaModalBotao);
+      this.modal.addEventListener(evento, this.fechaModalFora);
+    })
+
   }
 
   startModal(event){
     event.preventDefault();
     this.modal.classList.add('ativo');
-    console.log('clickou');
   }
 
   fechaModalBotao(){

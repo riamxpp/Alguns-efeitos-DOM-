@@ -237,6 +237,9 @@ ul, li, a {
   width: 400px;
   margin-bottom: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-modal a{

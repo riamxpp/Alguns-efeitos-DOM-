@@ -9,8 +9,10 @@ export default class AumentarDiminuirImg {
   }
 
   adicionandoEventos(){
-    this.botaoAumentar.addEventListener('click', this.aumentaImagem);    
-    this.botaoDiminuir.addEventListener('click', this.diminuiImagem);
+    ['touch', 'click'].forEach(evento => {
+      this.botaoAumentar.addEventListener(evento, this.aumentaImagem);    
+      this.botaoDiminuir.addEventListener(evento, this.diminuiImagem);
+    })
   }
 
   bindEventos(){

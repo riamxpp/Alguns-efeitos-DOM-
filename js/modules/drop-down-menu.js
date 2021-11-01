@@ -14,6 +14,7 @@ export default class DropDownMenu {
   }
 
   ativaDropDownMenu(event){
+    event.preventDefault();
     this.meuItem = event.currentTarget
 
     this.meuItem.classList.toggle('ativo');
